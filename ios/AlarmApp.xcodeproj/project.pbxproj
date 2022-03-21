@@ -114,7 +114,6 @@
 				0A846208C15BBC9C7F1ECF90 /* Pods-AlarmApp-AlarmAppTests.debug.xcconfig */,
 				872C681596BA793BC7097AB6 /* Pods-AlarmApp-AlarmAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
