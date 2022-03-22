@@ -14,6 +14,12 @@
 		421104834A9363B6BACDD162 /* libPods-AlarmApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6271F40F6ED47AC364404E7C /* libPods-AlarmApp.a */; };
 		5566F8C27B899AD8DC97E1C7 /* libPods-AlarmApp-AlarmAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACCE8350F929F0D328A9A89 /* libPods-AlarmApp-AlarmAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C6B1E98E27E9D18500F76A99 /* 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C6B1E98827E9D18500F76A99 /* 6.mp3 */; };
+		C6B1E98F27E9D18500F76A99 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C6B1E98927E9D18500F76A99 /* 3.mp3 */; };
+		C6B1E99027E9D18500F76A99 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C6B1E98A27E9D18500F76A99 /* 2.mp3 */; };
+		C6B1E99127E9D18500F76A99 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C6B1E98B27E9D18500F76A99 /* 1.mp3 */; };
+		C6B1E99227E9D18600F76A99 /* 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C6B1E98C27E9D18500F76A99 /* 5.mp3 */; };
+		C6B1E99327E9D18600F76A99 /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C6B1E98D27E9D18500F76A99 /* 4.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,12 @@
 		872C681596BA793BC7097AB6 /* Pods-AlarmApp-AlarmAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmApp-AlarmAppTests.release.xcconfig"; path = "Target Support Files/Pods-AlarmApp-AlarmAppTests/Pods-AlarmApp-AlarmAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		A297CBBAEF27C5750C8469C8 /* Pods-AlarmApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmApp.release.xcconfig"; path = "Target Support Files/Pods-AlarmApp/Pods-AlarmApp.release.xcconfig"; sourceTree = "<group>"; };
 		B3B359A260B1EA54B684257A /* Pods-AlarmApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmApp.debug.xcconfig"; path = "Target Support Files/Pods-AlarmApp/Pods-AlarmApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C6B1E98827E9D18500F76A99 /* 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 6.mp3; sourceTree = "<group>"; };
+		C6B1E98927E9D18500F76A99 /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
+		C6B1E98A27E9D18500F76A99 /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
+		C6B1E98B27E9D18500F76A99 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		C6B1E98C27E9D18500F76A99 /* 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5.mp3; sourceTree = "<group>"; };
+		C6B1E98D27E9D18500F76A99 /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -127,6 +139,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				C6B1E98B27E9D18500F76A99 /* 1.mp3 */,
+				C6B1E98A27E9D18500F76A99 /* 2.mp3 */,
+				C6B1E98927E9D18500F76A99 /* 3.mp3 */,
+				C6B1E98D27E9D18500F76A99 /* 4.mp3 */,
+				C6B1E98C27E9D18500F76A99 /* 5.mp3 */,
+				C6B1E98827E9D18500F76A99 /* 6.mp3 */,
 				13B07FAE1A68108700A75B9A /* AlarmApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* AlarmAppTests */,
@@ -242,8 +260,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B1E99227E9D18600F76A99 /* 5.mp3 in Resources */,
+				C6B1E99127E9D18500F76A99 /* 1.mp3 in Resources */,
+				C6B1E98E27E9D18500F76A99 /* 6.mp3 in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				C6B1E99027E9D18500F76A99 /* 2.mp3 in Resources */,
+				C6B1E98F27E9D18500F76A99 /* 3.mp3 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				C6B1E99327E9D18600F76A99 /* 4.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J95JBQAUZ4;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AlarmApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -510,6 +535,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J95JBQAUZ4;
 				INFOPLIST_FILE = AlarmApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

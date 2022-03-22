@@ -5,22 +5,26 @@ import moment from 'moment';
 import { Picker } from '@react-native-picker/picker';
 import ReactNativeAN from 'react-native-alarm-notification';
 import SimpleToast from 'react-native-simple-toast';
+// import Slider from '@react-native-community/slider';
+const PRIMARY_COLOR = '#F68D20'
 
 const App = () => {
   const [dateTime, setDateTime] = useState(new Date())
   const [alarmArray, setAlarmArray] = useState([])
   const [addAlarm, setAddAlarm] = useState(false)
-  const [selectedLanguage, setSelectedLanguage] = useState();
+  const [sound_name, setSelectedTune] = useState('1.mp3');
   const [count, setCount] = useState(0);
+  const [volume, setVolume] = useState(1);
 
   useEffect(() => {
     (async function () {
+      setAlarmArray(await ReactNativeAN.getScheduledAlarms())
       console.log(await ReactNativeAN.getScheduledAlarms())
-      console.log(alarmArray);
     })();
+    ReactNativeAN.requestPermissions({ alert: true, badge: true, sound: true })
   }, [count])
 
-  const removeAlarm = (index) => {
+  const removeAlarm = (alarmId) => {
     Alert.alert('Remove Alarm?', 'Are you sure you want to remove alarm?', [
       {
         text: 'Cancel'
@@ -29,9 +33,11 @@ const App = () => {
         text: 'Remove',
         style: 'destructive',
         onPress: () => {
-          setAlarmArray(alarmArray.filter(function (value, i, arr) {
-            return i != index && value;
-          }))
+          ReactNativeAN.deleteAlarm(alarmId)
+          setCount(count + 1)
+          // setAlarmArray(alarmArray.filter(function (value, i, arr) {
+          //   return i != index && value;
+          // }))
         }
       }
     ])
@@ -39,13 +45,17 @@ const App = () => {
 
   const addAlarmFunction = async () => {
     // setAlarmArray([...alarmArray, dateTime])
+    // const fire_date = ReactNativeAN.parseDate(new Date(Date.now() + 1000));
+    const fire_date = moment(dateTime).format('DD-MM-yyyy HH:mm:ss')
     let alarmNotifData = {
       title: "My Notification Title",
       message: "My Notification Message",
-      fire_date: moment(dateTime).format('DD-MM-yyyy HH:mm:ss')
+      fire_date,
+      sound_name,
+      // volume: parseFloat(volume)
     };
     await ReactNativeAN.scheduleAlarm({ ...alarmNotifData }).then(() => {
-      SimpleToast.show('Alarm has been scheduled')
+      SimpleToast.show('Alarm has been scheduled.')
       setCount(count + 1)
     }).catch((e) => {
       const str = e.message;
@@ -55,8 +65,6 @@ const App = () => {
   }
 
   const AlarmList = ({ item, index }) => {
-    const PRIMARY_COLOR = '#F68D20'
-
     return (
       <View style={{
         flexDirection: 'row',
@@ -74,10 +82,11 @@ const App = () => {
         elevation: 5,
       }}>
         <View style={{ flex: 0.5, justifyContent: 'center' }}>
-          <Text style={{ color: 'white', fontWeight: 'bold' }}>{index + 1}. {moment(item).format('DD-MM-yyyy HH:mm:ss')}</Text>
+          {/* <Text style={{ color: 'white', fontWeight: 'bold' }}>{index + 1}. {moment(item).format('DD-MM-yyyy HH:mm:ss')}</Text> */}
+          <Text style={{ color: 'white', fontWeight: 'bold' }}>{index + 1}. {`${item.day}-${item.month}-${item.year} ${item.hour}:${item.minute}`}</Text>
         </View>
         <View style={{ flex: 0.5, alignItems: 'flex-end', justifyContent: 'center' }}>
-          <TouchableOpacity onPress={() => removeAlarm(index)} style={{ backgroundColor: 'white', paddingHorizontal: 10, paddingVertical: 5, borderRadius: 200 }}>
+          <TouchableOpacity onPress={() => removeAlarm(Number(item.id))} style={{ backgroundColor: 'white', paddingHorizontal: 10, paddingVertical: 5, borderRadius: 200 }}>
             <Text style={{ color: 'red' }}>Remove</Text>
           </TouchableOpacity>
         </View>
@@ -109,18 +118,35 @@ const App = () => {
                 // display={Platform.OS == "android" ? "default" : 'spinner'}
                 onChange={(event, datetime) => setDateTime(datetime)}
               />
+              <Text style={{ fontSize: 20, fontWeight: 'bold' }}>Select Ringtone</Text>
               <Picker
-                selectedValue={selectedLanguage}
-                onValueChange={(itemValue, itemIndex) =>
-                  setSelectedLanguage(itemValue)
-                }>
-                <Picker.Item label="Tune 1" value="1" />
-                <Picker.Item label="Tune 2" value="2" />
-                <Picker.Item label="Tune 3" value="3" />
-                <Picker.Item label="Tune 4" value="4" />
-                <Picker.Item label="Tune 5" value="5" />
-                <Picker.Item label="Tune 6" value="6" />
+                selectedValue={sound_name}
+                onValueChange={(itemValue) => setSelectedTune(itemValue)}>
+                <Picker.Item label="Tune 1" value="1.mp3" />
+                <Picker.Item label="Tune 2" value="2.mp3" />
+                <Picker.Item label="Tune 3" value="3.mp3" />
+                <Picker.Item label="Tune 4" value="4.mp3" />
+                <Picker.Item label="Tune 5" value="5.mp3" />
+                <Picker.Item label="Tune 6" value="6.mp3" />
               </Picker>
+              {/* <View>
+                <Text style={{ fontSize: 20, fontWeight: 'bold' }}>
+                  Adjust Alarm Volume
+                </Text>
+                <Slider
+                  minimumValue={0}
+                  maximumValue={1}
+                  value={volume}
+                  step={0.1}
+                  minimumTrackTintColor={PRIMARY_COLOR}
+                  onValueChange={(value) => {
+                    setVolume(parseFloat(value)?.toFixed(1))
+                  }}
+                />
+                <Text style={{ fontSize: 20, fontWeight: 'bold' }}>
+                  Adjusted Volume: {Math.round(volume * 100)}%
+                </Text>
+              </View> */}
               <View style={{ flexDirection: 'row' }}>
                 <View style={{ flex: 0.5 }}>
                   <Button
@@ -139,12 +165,12 @@ const App = () => {
             </View>}
             <View>
               <Text style={{ fontSize: 20, fontWeight: 'bold', marginBottom: 15 }}>Settled Alarms</Text>
-              {/* <FlatList
+              <FlatList
                 extraData={alarmArray}
                 data={alarmArray}
                 renderItem={({ item, index }) => <AlarmList index={index} item={item} key={index} />}
                 ListEmptyComponent={() => <Text style={{ textAlign: 'center', fontWeight: 'bold', fontSize: 18, marginTop: 15 }}>No alarms settled</Text>}
-              /> */}
+              />
             </View>
           </View>
         </ScrollView>
