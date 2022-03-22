@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* AlarmAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AlarmAppTests.m */; };
+		00E356F31AD99517003FC87E /* LucidityGiverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* LucidityGiverTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		421104834A9363B6BACDD162 /* libPods-AlarmApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6271F40F6ED47AC364404E7C /* libPods-AlarmApp.a */; };
-		5566F8C27B899AD8DC97E1C7 /* libPods-AlarmApp-AlarmAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACCE8350F929F0D328A9A89 /* libPods-AlarmApp-AlarmAppTests.a */; };
+		421104834A9363B6BACDD162 /* libPods-LucidityGiver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6271F40F6ED47AC364404E7C /* libPods-LucidityGiver.a */; };
+		5566F8C27B899AD8DC97E1C7 /* libPods-LucidityGiver-LucidityGiverTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACCE8350F929F0D328A9A89 /* libPods-LucidityGiver-LucidityGiverTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C6B1E98E27E9D18500F76A99 /* 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C6B1E98827E9D18500F76A99 /* 6.mp3 */; };
 		C6B1E98F27E9D18500F76A99 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C6B1E98927E9D18500F76A99 /* 3.mp3 */; };
@@ -28,27 +28,27 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = AlarmApp;
+			remoteInfo = LucidityGiver;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* AlarmAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* LucidityGiverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LucidityGiverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* AlarmAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlarmAppTests.m; sourceTree = "<group>"; };
-		0A846208C15BBC9C7F1ECF90 /* Pods-AlarmApp-AlarmAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmApp-AlarmAppTests.debug.xcconfig"; path = "Target Support Files/Pods-AlarmApp-AlarmAppTests/Pods-AlarmApp-AlarmAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* AlarmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AlarmApp/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AlarmApp/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AlarmApp/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AlarmApp/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AlarmApp/main.m; sourceTree = "<group>"; };
-		6271F40F6ED47AC364404E7C /* libPods-AlarmApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AlarmApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6ACCE8350F929F0D328A9A89 /* libPods-AlarmApp-AlarmAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AlarmApp-AlarmAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AlarmApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		872C681596BA793BC7097AB6 /* Pods-AlarmApp-AlarmAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmApp-AlarmAppTests.release.xcconfig"; path = "Target Support Files/Pods-AlarmApp-AlarmAppTests/Pods-AlarmApp-AlarmAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		A297CBBAEF27C5750C8469C8 /* Pods-AlarmApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmApp.release.xcconfig"; path = "Target Support Files/Pods-AlarmApp/Pods-AlarmApp.release.xcconfig"; sourceTree = "<group>"; };
-		B3B359A260B1EA54B684257A /* Pods-AlarmApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmApp.debug.xcconfig"; path = "Target Support Files/Pods-AlarmApp/Pods-AlarmApp.debug.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* LucidityGiverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LucidityGiverTests.m; sourceTree = "<group>"; };
+		0A846208C15BBC9C7F1ECF90 /* Pods-LucidityGiver-LucidityGiverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LucidityGiver-LucidityGiverTests.debug.xcconfig"; path = "Target Support Files/Pods-LucidityGiver-LucidityGiverTests/Pods-LucidityGiver-LucidityGiverTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* LucidityGiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LucidityGiver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = LucidityGiver/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = LucidityGiver/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LucidityGiver/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LucidityGiver/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = LucidityGiver/main.m; sourceTree = "<group>"; };
+		6271F40F6ED47AC364404E7C /* libPods-LucidityGiver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LucidityGiver.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACCE8350F929F0D328A9A89 /* libPods-LucidityGiver-LucidityGiverTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LucidityGiver-LucidityGiverTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LucidityGiver/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		872C681596BA793BC7097AB6 /* Pods-LucidityGiver-LucidityGiverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LucidityGiver-LucidityGiverTests.release.xcconfig"; path = "Target Support Files/Pods-LucidityGiver-LucidityGiverTests/Pods-LucidityGiver-LucidityGiverTests.release.xcconfig"; sourceTree = "<group>"; };
+		A297CBBAEF27C5750C8469C8 /* Pods-LucidityGiver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LucidityGiver.release.xcconfig"; path = "Target Support Files/Pods-LucidityGiver/Pods-LucidityGiver.release.xcconfig"; sourceTree = "<group>"; };
+		B3B359A260B1EA54B684257A /* Pods-LucidityGiver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LucidityGiver.debug.xcconfig"; path = "Target Support Files/Pods-LucidityGiver/Pods-LucidityGiver.debug.xcconfig"; sourceTree = "<group>"; };
 		C6B1E98827E9D18500F76A99 /* 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 6.mp3; sourceTree = "<group>"; };
 		C6B1E98927E9D18500F76A99 /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
 		C6B1E98A27E9D18500F76A99 /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5566F8C27B899AD8DC97E1C7 /* libPods-AlarmApp-AlarmAppTests.a in Frameworks */,
+				5566F8C27B899AD8DC97E1C7 /* libPods-LucidityGiver-LucidityGiverTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,20 +71,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421104834A9363B6BACDD162 /* libPods-AlarmApp.a in Frameworks */,
+				421104834A9363B6BACDD162 /* libPods-LucidityGiver.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* AlarmAppTests */ = {
+		00E356EF1AD99517003FC87E /* LucidityGiverTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* AlarmAppTests.m */,
+				00E356F21AD99517003FC87E /* LucidityGiverTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = AlarmAppTests;
+			path = LucidityGiverTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -95,7 +95,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* AlarmApp */ = {
+		13B07FAE1A68108700A75B9A /* LucidityGiver */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -105,15 +105,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = AlarmApp;
+			name = LucidityGiver;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				6271F40F6ED47AC364404E7C /* libPods-AlarmApp.a */,
-				6ACCE8350F929F0D328A9A89 /* libPods-AlarmApp-AlarmAppTests.a */,
+				6271F40F6ED47AC364404E7C /* libPods-LucidityGiver.a */,
+				6ACCE8350F929F0D328A9A89 /* libPods-LucidityGiver-LucidityGiverTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,10 +121,10 @@
 		2F160F2E276B94F7865A0AA4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B3B359A260B1EA54B684257A /* Pods-AlarmApp.debug.xcconfig */,
-				A297CBBAEF27C5750C8469C8 /* Pods-AlarmApp.release.xcconfig */,
-				0A846208C15BBC9C7F1ECF90 /* Pods-AlarmApp-AlarmAppTests.debug.xcconfig */,
-				872C681596BA793BC7097AB6 /* Pods-AlarmApp-AlarmAppTests.release.xcconfig */,
+				B3B359A260B1EA54B684257A /* Pods-LucidityGiver.debug.xcconfig */,
+				A297CBBAEF27C5750C8469C8 /* Pods-LucidityGiver.release.xcconfig */,
+				0A846208C15BBC9C7F1ECF90 /* Pods-LucidityGiver-LucidityGiverTests.debug.xcconfig */,
+				872C681596BA793BC7097AB6 /* Pods-LucidityGiver-LucidityGiverTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -145,9 +145,9 @@
 				C6B1E98D27E9D18500F76A99 /* 4.mp3 */,
 				C6B1E98C27E9D18500F76A99 /* 5.mp3 */,
 				C6B1E98827E9D18500F76A99 /* 6.mp3 */,
-				13B07FAE1A68108700A75B9A /* AlarmApp */,
+				13B07FAE1A68108700A75B9A /* LucidityGiver */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* AlarmAppTests */,
+				00E356EF1AD99517003FC87E /* LucidityGiverTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				2F160F2E276B94F7865A0AA4 /* Pods */,
@@ -160,8 +160,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* AlarmApp.app */,
-				00E356EE1AD99517003FC87E /* AlarmAppTests.xctest */,
+				13B07F961A680F5B00A75B9A /* LucidityGiver.app */,
+				00E356EE1AD99517003FC87E /* LucidityGiverTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,9 +169,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* AlarmAppTests */ = {
+		00E356ED1AD99517003FC87E /* LucidityGiverTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AlarmAppTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LucidityGiverTests" */;
 			buildPhases = (
 				3395EC800B912C919F97423A /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -185,14 +185,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = AlarmAppTests;
-			productName = AlarmAppTests;
-			productReference = 00E356EE1AD99517003FC87E /* AlarmAppTests.xctest */;
+			name = LucidityGiverTests;
+			productName = LucidityGiverTests;
+			productReference = 00E356EE1AD99517003FC87E /* LucidityGiverTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* AlarmApp */ = {
+		13B07F861A680F5B00A75B9A /* LucidityGiver */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AlarmApp" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LucidityGiver" */;
 			buildPhases = (
 				E283DA8AEAA9472DAA3B0CC1 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -207,9 +207,9 @@
 			);
 			dependencies = (
 			);
-			name = AlarmApp;
-			productName = AlarmApp;
-			productReference = 13B07F961A680F5B00A75B9A /* AlarmApp.app */;
+			name = LucidityGiver;
+			productName = LucidityGiver;
+			productReference = 13B07F961A680F5B00A75B9A /* LucidityGiver.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +229,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AlarmApp" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "LucidityGiver" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -242,8 +242,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* AlarmApp */,
-				00E356ED1AD99517003FC87E /* AlarmAppTests */,
+				13B07F861A680F5B00A75B9A /* LucidityGiver */,
+				00E356ED1AD99517003FC87E /* LucidityGiverTests */,
 			);
 		};
 /* End PBXProject section */
@@ -294,15 +294,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlarmApp-AlarmAppTests/Pods-AlarmApp-AlarmAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LucidityGiver-LucidityGiverTests/Pods-LucidityGiver-LucidityGiverTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlarmApp-AlarmAppTests/Pods-AlarmApp-AlarmAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LucidityGiver-LucidityGiverTests/Pods-LucidityGiver-LucidityGiverTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlarmApp-AlarmAppTests/Pods-AlarmApp-AlarmAppTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LucidityGiver-LucidityGiverTests/Pods-LucidityGiver-LucidityGiverTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		136E228041EBD271C5937766 /* [CP] Copy Pods Resources */ = {
@@ -311,15 +311,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlarmApp/Pods-AlarmApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LucidityGiver/Pods-LucidityGiver-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlarmApp/Pods-AlarmApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LucidityGiver/Pods-LucidityGiver-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlarmApp/Pods-AlarmApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LucidityGiver/Pods-LucidityGiver-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3395EC800B912C919F97423A /* [CP] Check Pods Manifest.lock */ = {
@@ -337,7 +337,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AlarmApp-AlarmAppTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-LucidityGiver-LucidityGiverTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -350,15 +350,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlarmApp-AlarmAppTests/Pods-AlarmApp-AlarmAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LucidityGiver-LucidityGiverTests/Pods-LucidityGiver-LucidityGiverTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlarmApp-AlarmAppTests/Pods-AlarmApp-AlarmAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LucidityGiver-LucidityGiverTests/Pods-LucidityGiver-LucidityGiverTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlarmApp-AlarmAppTests/Pods-AlarmApp-AlarmAppTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LucidityGiver-LucidityGiverTests/Pods-LucidityGiver-LucidityGiverTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E283DA8AEAA9472DAA3B0CC1 /* [CP] Check Pods Manifest.lock */ = {
@@ -376,7 +376,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AlarmApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-LucidityGiver-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -389,15 +389,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlarmApp/Pods-AlarmApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LucidityGiver/Pods-LucidityGiver-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlarmApp/Pods-AlarmApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LucidityGiver/Pods-LucidityGiver-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlarmApp/Pods-AlarmApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LucidityGiver/Pods-LucidityGiver-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -426,7 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* AlarmAppTests.m in Sources */,
+				00E356F31AD99517003FC87E /* LucidityGiverTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +444,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* AlarmApp */;
+			target = 13B07F861A680F5B00A75B9A /* LucidityGiver */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -452,14 +452,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A846208C15BBC9C7F1ECF90 /* Pods-AlarmApp-AlarmAppTests.debug.xcconfig */;
+			baseConfigurationReference = 0A846208C15BBC9C7F1ECF90 /* Pods-LucidityGiver-LucidityGiverTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = AlarmAppTests/Info.plist;
+				INFOPLIST_FILE = LucidityGiverTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,17 +473,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlarmApp.app/AlarmApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LucidityGiver.app/LucidityGiver";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 872C681596BA793BC7097AB6 /* Pods-AlarmApp-AlarmAppTests.release.xcconfig */;
+			baseConfigurationReference = 872C681596BA793BC7097AB6 /* Pods-LucidityGiver-LucidityGiverTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = AlarmAppTests/Info.plist;
+				INFOPLIST_FILE = LucidityGiverTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -497,20 +497,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlarmApp.app/AlarmApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LucidityGiver.app/LucidityGiver";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3B359A260B1EA54B684257A /* Pods-AlarmApp.debug.xcconfig */;
+			baseConfigurationReference = B3B359A260B1EA54B684257A /* Pods-LucidityGiver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J95JBQAUZ4;
+				DEVELOPMENT_TEAM = S2K2Y2H6MM;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = AlarmApp/Info.plist;
+				INFOPLIST_FILE = LucidityGiver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -520,8 +520,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = AlarmApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreamlife.dan;
+				PRODUCT_NAME = LucidityGiver;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -530,13 +530,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A297CBBAEF27C5750C8469C8 /* Pods-AlarmApp.release.xcconfig */;
+			baseConfigurationReference = A297CBBAEF27C5750C8469C8 /* Pods-LucidityGiver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J95JBQAUZ4;
-				INFOPLIST_FILE = AlarmApp/Info.plist;
+				DEVELOPMENT_TEAM = S2K2Y2H6MM;
+				INFOPLIST_FILE = LucidityGiver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,8 +546,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = AlarmApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dreamlife.dan;
+				PRODUCT_NAME = LucidityGiver;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -679,7 +679,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AlarmAppTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LucidityGiverTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -688,7 +688,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AlarmApp" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LucidityGiver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -697,7 +697,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AlarmApp" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "LucidityGiver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
