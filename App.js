@@ -10,9 +10,11 @@ const PRIMARY_COLOR = '#F68D20'
 
 const App = () => {
   const [dateTime, setDateTime] = useState(new Date())
+  const [time, setTime] = useState(new Date())
+  const [date, setDate] = useState(new Date())
   const [alarmArray, setAlarmArray] = useState([])
   const [addAlarm, setAddAlarm] = useState(false)
-  const [sound_name, setSelectedTune] = useState('1.mp3');
+  const [sound_name, setSelectedTune] = useState(Platform.OS == "ios" ? '1.mp3' : 'one.mp3');
   const [count, setCount] = useState(0);
   const [volume, setVolume] = useState(1);
 
@@ -21,7 +23,7 @@ const App = () => {
       setAlarmArray(await ReactNativeAN.getScheduledAlarms())
       console.log(await ReactNativeAN.getScheduledAlarms())
     })();
-    ReactNativeAN.requestPermissions({ alert: true, badge: true, sound: true })
+    Platform.OS == "ios" && ReactNativeAN.requestPermissions({ alert: true, badge: true, sound: true })
   }, [count])
 
   const removeAlarm = (alarmId) => {
@@ -44,9 +46,9 @@ const App = () => {
   }
 
   const addAlarmFunction = async () => {
-    // setAlarmArray([...alarmArray, dateTime])
-    // const fire_date = ReactNativeAN.parseDate(new Date(Date.now() + 1000));
-    const fire_date = moment(dateTime).format('DD-MM-yyyy HH:mm:ss')
+
+    const fire_date = ReactNativeAN.parseDate(new Date(Date.now() + 1000));
+    // const fire_date = Platform.OS == "ios" ? moment(dateTime).format('DD-MM-yyyy HH:mm:ss') : `${moment(date).format('DD-MM-yyyy')} ${moment(time).format('HH:mm:ss')}`
     let alarmNotifData = {
       title: "My Notification Title",
       message: "My Notification Message",
@@ -94,6 +96,66 @@ const App = () => {
     )
   }
 
+  const DateTime = () => {
+    const [datePicker, setDatePicker] = useState(false)
+    const [timePicker, setTimePicker] = useState(false)
+
+    if (Platform.OS == "ios") {
+      return (
+        <DateTimePicker
+          style={{ marginVertical: 10 }}
+          mode="datetime"
+          value={dateTime}
+          // display={Platform.OS == "android" ? "default" : 'spinner'}
+          onChange={(event, datetime) => setDateTime(datetime)}
+        />
+      )
+    } else {
+      return (
+        <View>
+          <View style={{ flexDirection: "row" }}>
+            <View style={{ flex: 0.5 }}>
+              <TouchableOpacity style={{ alignItems: 'center', backgroundColor: PRIMARY_COLOR, padding: 10, borderRadius: 8, margin: 2 }} onPress={() => { setDatePicker(!datePicker) }}>
+                <View>
+                  <Text style={{ color: "white" }}>Set Date</Text>
+                </View>
+              </TouchableOpacity>
+              <Text style={{ marginVertical: 10 }}>Selected Date: {moment(date).format('DD-MM-yyyy')}</Text>
+            </View>
+            <View style={{ flex: 0.5 }}>
+              <TouchableOpacity style={{ alignItems: 'center', backgroundColor: PRIMARY_COLOR, padding: 10, borderRadius: 8, margin: 2 }} onPress={() => { setTimePicker(!timePicker) }}>
+                <View>
+                  <Text style={{ color: "white" }}>Set Time</Text>
+                </View>
+              </TouchableOpacity>
+              <Text style={{ marginVertical: 10 }}>Selected Time: {moment(time).format('HH:mm')}</Text>
+            </View>
+          </View>
+          {
+            datePicker && <DateTimePicker
+              // style={{ marginVertical: 10 }}
+              mode="date"
+              value={date}
+              value={new Date()}
+              // display={Platform.OS == "android" ? "default" : 'spinner'}
+              onChange={(event, datetime) => setDate(datetime)}
+            />
+          }
+          {
+            timePicker && <DateTimePicker
+              // style={{ marginVertical: 10 }}
+              mode="time"
+              // value={time}
+              value={new Date()}
+              // display={Platform.OS == "android" ? "default" : 'spinner'}
+              onChange={(event, datetime) => setTime(datetime)}
+            />
+          }
+        </View>
+      )
+    }
+  }
+
   return (
     <View style={{ flex: 1, backgroundColor: 'white' }}>
       <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
@@ -111,23 +173,24 @@ const App = () => {
             </View>
             {addAlarm && <View style={{ padding: 10, paddingTop: 0 }}>
               <Text style={{ fontSize: 20, fontWeight: 'bold' }}>Select Date and Time</Text>
-              <DateTimePicker
+              {/* <DateTimePicker
                 style={{ marginVertical: 10 }}
                 mode="datetime"
                 value={dateTime}
                 // display={Platform.OS == "android" ? "default" : 'spinner'}
                 onChange={(event, datetime) => setDateTime(datetime)}
-              />
+              /> */}
+              <DateTime />
               <Text style={{ fontSize: 20, fontWeight: 'bold' }}>Select Ringtone</Text>
               <Picker
                 selectedValue={sound_name}
                 onValueChange={(itemValue) => setSelectedTune(itemValue)}>
-                <Picker.Item label="Tune 1" value="1.mp3" />
-                <Picker.Item label="Tune 2" value="2.mp3" />
-                <Picker.Item label="Tune 3" value="3.mp3" />
-                <Picker.Item label="Tune 4" value="4.mp3" />
-                <Picker.Item label="Tune 5" value="5.mp3" />
-                <Picker.Item label="Tune 6" value="6.mp3" />
+                <Picker.Item label="Tune 1" value={Platform.OS == "ios" ? "1.mp3" : "one.mp3"} />
+                <Picker.Item label="Tune 2" value={Platform.OS == "ios" ? "2.mp3" : "two.mp3"} />
+                <Picker.Item label="Tune 3" value={Platform.OS == "ios" ? "3.mp3" : "three.mp3"} />
+                <Picker.Item label="Tune 4" value={Platform.OS == "ios" ? "4.mp3" : "four.mp3"} />
+                <Picker.Item label="Tune 5" value={Platform.OS == "ios" ? "5.mp3" : "five.mp3"} />
+                <Picker.Item label="Tune 6" value={Platform.OS == "ios" ? "6.mp3" : "six.mp3"} />
               </Picker>
               {/* <View>
                 <Text style={{ fontSize: 20, fontWeight: 'bold' }}>
