@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, Platform, Button, ScrollView, TouchableOpacity, FlatList, Alert } from 'react-native'
+import { View, Text, SafeAreaView, Platform, Button, ScrollView, TouchableOpacity, FlatList, Alert, StatusBar } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import DateTimePicker from '@react-native-community/datetimepicker';
 import moment from 'moment';
@@ -47,11 +47,11 @@ const App = () => {
 
   const addAlarmFunction = async () => {
 
-    const fire_date = ReactNativeAN.parseDate(new Date(Date.now() + 1000));
-    // const fire_date = Platform.OS == "ios" ? moment(dateTime).format('DD-MM-yyyy HH:mm:ss') : `${moment(date).format('DD-MM-yyyy')} ${moment(time).format('HH:mm:ss')}`
+    // const fire_date = ReactNativeAN.parseDate(new Date(Date.now() + 1000));
+    const fire_date = Platform.OS == "ios" ? moment(dateTime).format('DD-MM-yyyy HH:mm:ss') : `${moment(date).format('DD-MM-yyyy')} ${moment(time).format('HH:mm:ss')}`
     let alarmNotifData = {
-      title: "My Notification Title",
-      message: "My Notification Message",
+      title: "Lucidity Giver",
+      message: "",
       fire_date,
       sound_name,
       // volume: parseFloat(volume)
@@ -158,10 +158,11 @@ const App = () => {
 
   return (
     <View style={{ flex: 1, backgroundColor: 'white' }}>
+      <StatusBar barStyle='dark-content' />
       <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
         <ScrollView>
           <View style={{ flex: 1, backgroundColor: 'white', padding: 10 }}>
-            <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Welcome to DreamLife</Text>
+            <Text style={{ fontSize: 30, fontWeight: 'bold' }}>Welcome to Lucidity Giver</Text>
             <View style={{ padding: 10 }}>
               {
                 !addAlarm &&
